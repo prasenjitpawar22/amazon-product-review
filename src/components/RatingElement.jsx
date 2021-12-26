@@ -15,7 +15,7 @@ const RatingElement = (props) => {
     let i = 0;
 
     for (i; i < 5; i++) {
-      if (i < rateStars && rateStars % 1 == 0.5) {
+      if (i < rateStars && rateStars % 1 === 0.5) {
         for (i; i < rateStars - 1; i++) {
           e.push(<FontAwesomeIcon key={i} icon={fullStar} />);
         }
